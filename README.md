@@ -9,3 +9,7 @@ A pwn learning repo containing multiple pwn program codes.
 [Pwn学习总结（3）：gdb调试命令篇](https://renjikai.com/pwn-learning-summary-3/)
 
 [Pwn学习总结（4）：无保护的栈溢出](https://renjikai.com/pwn-learning-summary-4/)
+
+[Pwn学习总结（5）：No-PIE-eXecutable，ASLR-Library](https://renjikai.com/pwn-learning-summary-5/)
+
+[Pwn学习总结（6）：NX与ROP](https://renjikai.com/pwn-learning-summary-6/)
