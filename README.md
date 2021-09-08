@@ -13,3 +13,5 @@ A pwn learning repo containing multiple pwn program codes.
 [Pwn学习总结（5）：No-PIE-eXecutable，ASLR-Library](https://renjikai.com/pwn-learning-summary-5/)
 
 [Pwn学习总结（6）：NX与ROP](https://renjikai.com/pwn-learning-summary-6/)
+
+[Pwn学习总结（7）：Canary 利用CVE-2010-3192实现任意地址读](https://renjikai.com/pwn-learning-summary-7/)
