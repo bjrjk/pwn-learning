@@ -15,3 +15,7 @@ A pwn learning repo containing multiple pwn program codes.
 [Pwn学习总结（6）：NX与ROP](https://renjikai.com/pwn-learning-summary-6/)
 
 [Pwn学习总结（7）：Canary 利用CVE-2010-3192实现任意地址读](https://renjikai.com/pwn-learning-summary-7/)
+
+[Pwn学习总结（8）：Canary泄露](https://renjikai.com/pwn-learning-summary-8/)
+
+[Pwn学习总结（9）：格式化字符串漏洞 echo](https://renjikai.com/pwn-learning-summary-9/)
