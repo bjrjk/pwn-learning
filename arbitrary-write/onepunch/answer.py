@@ -16,7 +16,7 @@ gdb_command =   """
 time.sleep(1)
 
 p.recvuntil("Where What?")
-# Change 0x400767: jnz short loc_400778 to jnz short loc_40071D
+# Change 0x400767: jnz short loc_400773 to jnz short loc_40071D
 p.sendline("400768 180")
 p.recvuntil("Where What?")
 # Change 0x400767: jnz short loc_40071D to jmp short loc_40071D
