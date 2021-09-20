@@ -27,3 +27,7 @@ A pwn learning repo containing multiple pwn program codes.
 [Pwn学习总结（12）：格式化字符串漏洞 pwn200](https://renjikai.com/pwn-learning-summary-12/)
 
 [Pwn学习总结（13）：格式化字符串-综合 notepad](https://renjikai.com/pwn-learning-summary-13/)
+
+[Pwn学习总结（14）：UAF](https://renjikai.com/pwn-learning-summary-14/)
+
+[Pwn学习总结（15）：任意位置写-onepunch](https://renjikai.com/pwn-learning-summary-15/)
