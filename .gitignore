@@ -33,7 +33,6 @@ peda*.txt
 *.dylib
 
 # Executables
-*.exe
 *.out
 *.app
 *.i*86
@@ -47,7 +46,6 @@ peda*.txt
 
 # Kernel Module Compile Results
 *.mod*
-*.cmd
 .tmp_versions/
 modules.order
 Module.symvers
