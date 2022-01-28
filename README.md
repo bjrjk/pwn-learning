@@ -31,3 +31,9 @@ A pwn learning repo containing multiple pwn program codes.
 [Pwn学习总结（14）：UAF](https://renjikai.com/pwn-learning-summary-14/)
 
 [Pwn学习总结（15）：任意位置写-onepunch](https://renjikai.com/pwn-learning-summary-15/)
+
+[Pwn学习总结（16）：SROP-360chunqiu2017_smallest](https://renjikai.com/pwn-learning-summary-16/)
+
+[Pwn学习总结（17）：UAF-hacknote](https://renjikai.com/pwn-learning-summary-17/)
+
+[Pwn学习总结（18）：VSyscall-vul64](https://renjikai.com/pwn-learning-summary-18/)
