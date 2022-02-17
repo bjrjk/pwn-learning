@@ -37,3 +37,11 @@ A pwn learning repo containing multiple pwn program codes.
 [Pwn学习总结（17）：UAF-hacknote](https://renjikai.com/pwn-learning-summary-17/)
 
 [Pwn学习总结（18）：VSyscall-vul64](https://renjikai.com/pwn-learning-summary-18/)
+
+[Pwn学习总结（19）：Heap-FastBin/fastbin](https://renjikai.com/pwn-learning-summary-19/)
+
+[Pwn学习总结（20）：Heap-Unlink/offbyone_unlink](https://renjikai.com/pwn-learning-summary-20/)
+
+[Pwn学习总结（21）：Heap-OtherBin/offbyone](https://renjikai.com/pwn-learning-summary-21/)
+
+[Pwn学习总结（22）：Heap-OtherBin/unsorted_bin](https://renjikai.com/pwn-learning-summary-22/)
