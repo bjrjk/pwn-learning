@@ -57,6 +57,7 @@ aka `(char *)&main_arena.bins[0] - offset(fd, struct malloc_chunk)`, aka `main_a
 Reference: https://code.woboq.org/userspace/glibc/malloc/malloc.c.html
 At malloc.c:3740, `(victim = unsorted_chunks (av)->bk)` as the first free unsorted bin;
 At malloc.c:3742, `bck = victim->bk` as the second free unsorted bin which can be controlled via UAF;
+At malloc.c:3797, the condition `bck->fd != victim` just magically satisfied.
 At malloc.c:3799, `unsorted_chunks (av)->bk = bck` lead a next allocate from unsorted bin crashing the program
                     because of invalid size 0 at offset of bck->mchunk_size on `(char *)&data_bss - 0x8`;
 At malloc.c:3800, ` bck->fd = unsorted_chunks (av)` write exactly on `&data_bss` with value `unsorted_chunks (av)`
