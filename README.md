@@ -45,3 +45,7 @@ A pwn learning repo containing multiple pwn program codes.
 [Pwn学习总结（21）：Heap-OtherBin/offbyone](https://renjikai.com/pwn-learning-summary-21/)
 
 [Pwn学习总结（22）：Heap-OtherBin/unsorted_bin](https://renjikai.com/pwn-learning-summary-22/)
+
+[Pwn学习总结（23）：Heap – House of Orange – bookwriter](https://renjikai.com/pwn-learning-summary-23/)
+
+[Pwn学习总结（24）：Heap – TCache – tcache](https://renjikai.com/pwn-learning-summary-24/)
