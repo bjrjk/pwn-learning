@@ -37,7 +37,7 @@ elf = ELF('./tcache')
 # gdb.attach(p, '')
 
 """
-The size range of TCache is [0x20, 0x400).
+The size range of TCache is [0x20, 0x410].
 """
 
 # Step 1: Fake an unsorted bin
