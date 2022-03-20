@@ -49,3 +49,7 @@ A pwn learning repo containing multiple pwn program codes.
 [Pwn学习总结（23）：Heap – House of Orange – bookwriter](https://renjikai.com/pwn-learning-summary-23/)
 
 [Pwn学习总结（24）：Heap – TCache – tcache](https://renjikai.com/pwn-learning-summary-24/)
+
+[Pwn学习总结（25）：_IO_FILE – io_leak](https://renjikai.com/pwn-learning-summary-25/)
+
+[Pwn学习总结（26）：TCache – tcache231](https://renjikai.com/pwn-learning-summary-26/)
