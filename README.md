@@ -53,3 +53,5 @@ A pwn learning repo containing multiple pwn program codes.
 [Pwn学习总结（25）：_IO_FILE – io_leak](https://renjikai.com/pwn-learning-summary-25/)
 
 [Pwn学习总结（26）：TCache – tcache231](https://renjikai.com/pwn-learning-summary-26/)
+
+[Pwn学习总结（27）：SmallBin – playthenew](https://renjikai.com/pwn-learning-summary-27/)
