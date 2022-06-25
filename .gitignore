@@ -2,6 +2,10 @@
 .gdb_history
 peda*.txt
 
+# IDA
+!*.i64
+!*.so.i64
+
 # Prerequisites
 *.d
 
@@ -29,7 +33,7 @@ peda*.txt
 # Shared objects (inc. Windows DLLs)
 *.dll
 # *.so
-*.so.*
+# *.so.*
 *.dylib
 
 # Executables
