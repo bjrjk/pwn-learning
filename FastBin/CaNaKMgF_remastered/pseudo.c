@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
 char* alloc_list[100];
 unsigned int alloc_idx = 0;
 int main() {
